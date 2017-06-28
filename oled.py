@@ -155,7 +155,7 @@ try:
                 itemList = line[:-1].split('=')
                 str01 = itemList[1]
                 str01 = str01.decode('UTF8')
-                print itemList[0], str01
+                # print itemList[0], str01
                 if itemList[0] == 'title':
                     str01 = itemList[1]
                     str01 = str01.decode('UTF8')

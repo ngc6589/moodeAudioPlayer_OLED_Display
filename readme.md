@@ -34,3 +34,12 @@ https://www.telnet.jp/~mia/sb/log/eid213.html
 https://www.telnet.jp/~mia/sb/log/eid220.html  
 https://www.telnet.jp/~mia/sb/log/eid218.html  
 
+*■フォントの配置*
+
+PixelMplus12-Regular.ttf  
+を oled.py と同じディレクトリにおいてください。
+
+*■自動起動の方法*
+/etc/rc.local の exit の前に下記コマンドを追加してください。
+
+nohup python /home/pi/python/oled.py > /dev/null 2>&1 &:  
