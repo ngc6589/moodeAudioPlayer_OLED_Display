@@ -5,7 +5,7 @@ oled.py
 moOde player で再生中の極情報などを Adafruit 社 OLED モジュール(128x64ピクセル)に
 表示するサンプルスクリプトです。
 
-*■対応するプレーヤソフト*
+*■対応するプレーヤソフト*  
 Moode Audio Player  
 http://moodeaudio.org  
 
@@ -13,7 +13,7 @@ http://moodeaudio.org
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
 問題なく動くと思われます。
 
-*■使用した OLED モジュール*
+*■使用した OLED モジュール*  
 adafruit  
 PRODUCT ID: 326  
 Monochrome 0.96" 128x64 OLED graphic display  
@@ -22,7 +22,7 @@ Monochrome 0.96" 128x64 OLED graphic display
 接続方法などの解説ページを参考にして SPI 接続の配線を行ってください。   
 https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black
 
-*■使用した DAC ボード*
+*■使用した DAC ボード*  
 「じんそんのぶにっき」さんが設計された  
 TDA1387 DAC for Raspberry pi zero  
 を使用しています。  
