@@ -17,7 +17,7 @@ Moode Audio Player
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
 問題なく動くと思われます。
 
-ブラウザから moode audio player の画面を開いて、設定→ｘｘｘｘｘ を有効にしてください。
+ブラウザから moode audio player の設定画面を開いて、currentsong.txt 更新を有効にしてください。
 
 
 ## ■使用した OLED モジュール  
@@ -43,6 +43,8 @@ $ cd Adafruit_Python_SSD1306
 $ sudo python setup.py install
 ```
 
+
+raspi-config から SPI を有効にするのも忘れないでください
 
 
 
