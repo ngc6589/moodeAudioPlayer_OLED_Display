@@ -48,8 +48,8 @@ http://itouhiro.hatenablog.com/entry/20130602/font
 oled.py のフォントファイル名のところをフルパスで記述してください。
 
 例 フォントを /home/pi/ に配置したときは、
-'# 日本語フォントの登録'  
-'font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')'  
+`# 日本語フォントの登録`  
+`font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')`  
 としてください。
 
 
