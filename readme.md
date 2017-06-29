@@ -23,11 +23,11 @@ Monochrome 0.96" 128x64 OLED graphic display
 https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black
 
 *■使用した DAC ボード*  
-「じんそんのぶにっき」さんが設計された  
+「じんそんのぶにっき」さんの web サイトの主が作られた  
 TDA1387 DAC for Raspberry pi zero  
 を使用しています。  
 
-頒布ページ
+頒布ページ  
 https://www.switch-science.com/catalog/3282/  
 https://www.telnet.jp/~mia/sb/log/eid213.html  
 スクリプトサンプルのサポートページ  
@@ -36,10 +36,29 @@ https://www.telnet.jp/~mia/sb/log/eid218.html
 
 *■フォントの配置*
 
-PixelMplus12-Regular.ttf  
-を oled.py と同じディレクトリにおいてください。
+OLED に表示する文字フォントは、下記アドレスからダウンロードした
+12ドット等幅 TrueType フォントを使用しています。
 
-*■自動起動の方法*
-/etc/rc.local の exit の前に下記コマンドを追加してください。
 
-nohup python /home/pi/python/oled.py > /dev/null 2>&1 &:  
+PixelMplus（ピクセル・エムプラス） ‥ 8bitビットマップふうフリーフォント
+http://itouhiro.hatenablog.com/entry/20130602/font
+
+
+ダウンロードした zip を展開して PixelMplus12-Regular.ttf を oled.py と同じディレクトリにおいてください。
+oled.py のフォントファイル名のところをフルパスで記述してください。
+
+例 フォントを /home/pi/ に配置したときは、
+'# 日本語フォントの登録'  
+'font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')'  
+としてください。
+
+
+12ドット等幅フォントであれば、たのフォントでも表示可能と思います。お好みのフォントに差し替えてみるのもよいかと思います。
+
+*■自動起動の方法*  
+
+/etc/rc.local の exit の前に下記コマンドを追加してください。  
+
+nohup python /home/pi/oled.py > /dev/null 2>&1 &  
+
+
