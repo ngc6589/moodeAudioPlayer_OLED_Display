@@ -1,12 +1,12 @@
-# ラズパイ DAC で OLED 液晶画面に曲名などを表示するサンプルスクリプト  
+# ラズパイ DAC で OLED 液晶画面に曲名などを表示する python スクリプト  
 
 moode audio player しばりになりますが、再生中の曲情報などを Adafruit 社 OLED モジュールに
 表示するサンプルスクリプトです。
 コントローラ: SSD1306  
-描画サイズ: 128x64 ピクセル  
-であれば、そのまま当スクリプト流用可能かと思います。  
+描画サイズ: 128x64 ピクセル
+で SPI 接続対応可能であれば、そのまま当スクリプト流用可能かと思います。  
 
-
+*当スクリプトは python 2.7 で動作確認しています*  
 
 ## ■対応するプレーヤソフト  
 
@@ -17,14 +17,16 @@ Moode Audio Player
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
 問題なく動くと思われます。
 
-*■使用した OLED モジュール*  
+## ■使用した OLED モジュール  
+
 adafruit  
 PRODUCT ID: 326  
 Monochrome 0.96" 128x64 OLED graphic display  
 
 このサンプルプログラムは raspberry pi と SPI 接続で使用するものです。
-接続方法などの解説ページを参考にして SPI 接続の配線を行ってください。   
-https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black
+下記解説ページを参考にして SPI 接続の配線、ラズパイに必要な adafruit の液晶制御モジュールをインストールしてください。   
+
+<https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black>
 
 *■使用した DAC ボード*  
 「じんそんのぶにっき」さんの web サイトの主が作られた  
@@ -38,26 +40,27 @@ https://www.telnet.jp/~mia/sb/log/eid213.html
 https://www.telnet.jp/~mia/sb/log/eid220.html  
 https://www.telnet.jp/~mia/sb/log/eid218.html  
 
+
+DAC ボード依存はありませんので、他の DAC ボードでも SPI ポートが配線できれば問題ありません
+
 *■フォントの配置*
 
 OLED に表示する文字フォントは、下記アドレスからダウンロードした
 12ドット等幅 TrueType フォントを使用しています。
 
 
-PixelMplus（ピクセル・エムプラス） ‥ 8bitビットマップふうフリーフォント
-http://itouhiro.hatenablog.com/entry/20130602/font
+PixelMplus（ピクセル・エムプラス） ‥ 8bitビットマップふうフリーフォント  
+<http://itouhiro.hatenablog.com/entry/20130602/font>  
 
 
-ダウンロードした zip を展開して PixelMplus12-Regular.ttf を oled.py と同じディレクトリにおいてください。
-oled.py のフォントファイル名のところをフルパスで記述してください。
-
-例 フォントを /home/pi/ に配置したときは、
+ダウンロードした zip を展開して PixelMplus12-Regular.ttf を適当なディレクトリに配置して下さい。
+oled.py 内の下記場所のパス名を書き換えてください。
 `# 日本語フォントの登録`  
 `font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')`  
-としてください。
 
 
-12ドット等幅フォントであれば、たのフォントでも表示可能と思います。お好みのフォントに差し替えてみるのもよいかと思います。
+
+12ドット等幅フォントであれば、他のフォントでも表示可能と思います。お好みのフォントに差し替えてみるのもよいかと思います。
 
 *■自動起動の方法*  
 
