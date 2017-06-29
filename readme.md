@@ -1,13 +1,17 @@
-oled.py
+# ラズパイ DAC で OLED 液晶画面に曲名などを表示するサンプルスクリプト  
 
-このスクリプトは、作成途中のものを git 管理しているので動く状態のものではありません。
-
-moOde player で再生中の極情報などを Adafruit 社 OLED モジュール(128x64ピクセル)に
+moode audio player しばりになりますが、再生中の曲情報などを Adafruit 社 OLED モジュールに
 表示するサンプルスクリプトです。
+コントローラ: SSD1306  
+描画サイズ: 128x64 ピクセル  
+であれば、そのまま当スクリプト流用可能かと思います。  
 
-*■対応するプレーヤソフト*  
+
+
+## ■対応するプレーヤソフト  
+
 Moode Audio Player  
-http://moodeaudio.org  
+<http://moodeaudio.org>  
 
 3.7 Release 2017-05-25 で動作を確認中です。
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
