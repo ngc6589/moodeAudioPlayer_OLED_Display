@@ -72,9 +72,11 @@ PixelMplus（ピクセル・エムプラス） ‥ 8bitビットマップふう�
 
 
 ダウンロードした zip を展開して PixelMplus12-Regular.ttf を適当なディレクトリに配置して下さい。
-oled.py 内の下記場所のパス名を書き換えてください。
-`# 日本語フォントの登録`  
-`font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')`  
+oled.py 内の下記場所のパス名を書き換えてください。  
+```
+# 日本語フォントの登録
+font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')
+```
 
 
 
