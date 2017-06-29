@@ -17,6 +17,9 @@ Moode Audio Player
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
 問題なく動くと思われます。
 
+ブラウザから moode audio player の画面を開いて、設定→ｘｘｘｘｘ を有効にしてください。
+
+
 ## ■使用した OLED モジュール  
 
 adafruit  
@@ -28,7 +31,7 @@ Monochrome 0.96" 128x64 OLED graphic display
 
 <https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black>
 
-*■使用した DAC ボード*  
+## ■使用した DAC ボード  
 「じんそんのぶにっき」さんの web サイトの主が作られた  
 TDA1387 DAC for Raspberry pi zero  
 を使用しています。  
@@ -43,7 +46,7 @@ https://www.telnet.jp/~mia/sb/log/eid218.html
 
 DAC ボード依存はありませんので、他の DAC ボードでも SPI ポートが配線できれば問題ありません
 
-*■フォントの配置*
+## ■フォントの配置  
 
 OLED に表示する文字フォントは、下記アドレスからダウンロードした
 12ドット等幅 TrueType フォントを使用しています。
@@ -62,7 +65,7 @@ oled.py 内の下記場所のパス名を書き換えてください。
 
 12ドット等幅フォントであれば、他のフォントでも表示可能と思います。お好みのフォントに差し替えてみるのもよいかと思います。
 
-*■自動起動の方法*  
+## ■自動起動の方法  
 
 /etc/rc.local の exit の前に下記コマンドを追加してください。  
 
