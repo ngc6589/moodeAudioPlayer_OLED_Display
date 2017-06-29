@@ -31,6 +31,21 @@ Monochrome 0.96" 128x64 OLED graphic display
 
 <https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black>
 
+
+```
+$ sudo apt-get update
+$ sudo apt-get install build-essential python-dev python-pip
+$ sudo pip install RPi.GPIO 
+$ sudo apt-get install python-imaging python-smbus
+$ sudo apt-get install git
+$ git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
+$ cd Adafruit_Python_SSD1306
+$ sudo python setup.py install
+```
+
+
+
+
 ## ■使用した DAC ボード  
 「じんそんのぶにっき」さんの web サイトの主が作られた  
 TDA1387 DAC for Raspberry pi zero  
