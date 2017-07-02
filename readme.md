@@ -8,6 +8,9 @@ moode audio player しばりになりますが、再生中の曲情報などを 
 
 *当スクリプトは python 2.7 で動作確認しています*  
 
+$ git clone https://github.com/ngc6589/moodeAudioPlayer_OLED_Display.git  
+で、お使いのラズパイにいれてください。
+
 ## ■対応するプレーヤソフト  
 
 Moode Audio Player  
