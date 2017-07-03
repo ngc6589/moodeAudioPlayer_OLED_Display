@@ -134,7 +134,7 @@ image = Image.new('1', (width, height))
 draw = ImageDraw.Draw(image)
 
 # 日本語フォントの登録
-font12 = ImageFont.truetype('/home/pi/python/PixelMplus12-Regular.ttf', 12, encoding='unic')
+font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='unic')
 
 # 変数
 scrollCount = 0
@@ -289,7 +289,7 @@ try:
         # OLED に出力
         disp.image(image)
         disp.display()
-        time.sleep(0.1)
+        time.sleep(0.15)
 
 
 except KeyboardInterrupt:
