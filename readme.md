@@ -94,3 +94,10 @@ font12 = ImageFont.truetype('/home/pi/PixelMplus12-Regular.ttf', 12, encoding='u
 nohup python /home/pi/oled.py > /dev/null 2>&1 &  
 
 
+## ■ヘルパースクリプト  
+
+/mnt/SDCARD 配下に入れた楽曲のフォルダを参照してフォルダ毎にプレイリストファイルを生成するスクリプトです。
+プレイリストファイルは、/var/lib/mpd/playlists ディレクトリに出力します。
+
+
+ 
