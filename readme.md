@@ -16,7 +16,8 @@ $ git clone https://github.com/ngc6589/moodeAudioPlayer_OLED_Display.git
 Moode Audio Player  
 <http://moodeaudio.org>  
 
-3.7 Release 2017-05-25 で動作を確認中です。
+3.7 Release 2017-05-25 で動作確認しました。
+3.8.2 Release 2017-08-13 で動作確認しました。
 /var/local/www/currentsong.txt のメタデータファイル作成可能なバージョンであれば
 問題なく動くと思われます。
 
