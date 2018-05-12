@@ -1,5 +1,7 @@
 # ラズパイ DAC で OLED 液晶画面に曲名などを表示する python スクリプト  
 
+![2018-05-06 14 43 52](https://user-images.githubusercontent.com/4132056/39954780-b90d1ff8-55ff-11e8-846f-58d1cdc79591.jpg)  
+
 moode audio player しばりになりますが、再生中の曲情報などを Adafruit 社 OLED モジュールに
 表示するサンプルスクリプトです。
 コントローラ: SSD1306  
